@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <!--Las listas pueden ser numeradas o no numeradas-->
+    <h1>Listas numeradas</h1><!--Del ingles Ordered List, de ahi la etiqueta ol-->
+    <ol style="list-style-type: lower-alpha;">  <!--esta etiqueta indica que la lista comienza / termina, pero no tiene mas contenido-->
+        <!--Los puntos que contiene se tienen que añadir con la etiqueta li (de List Item)-->
+        <li>Lenguajes de marcas</li>
+        <li>Entornos de desarrollo</li>
+        <li>Programacion</li>
+        <li>...</li>
+
+    </ol>
+    <h1>Listas no numeradas</h1>
+    <ul style="list-style-type:square ;">
+        <li>Lenguajes de marcas</li>
+        <li>Entornos de desarrollo</li>
+        <li>Programacion</li>
+        <li>...</li>
+    </ul>
+       
+    <h1>Listas anidadas</h1>
+    <ul style="list-style: disc;">
+        <li>Lenguajes de marcas
+        <ol><!--Debako del item que me interese añado una lista del tipo que yo quiera-->
+            <li>Introducion a los lenguajes de marcas.</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>XML</li>
+        </ol>
+    </li>
+        <li>Entornos de desarrollo
+        <ol>
+            <li>Introduccion al desarrollo de software</li>
+            <li>Instalacion y uso de entornos de desarrollos</li>
+            <li>Diagramas de flujo</li>
+        </ol>
+    </li>
+        <li>Programacion</li>
+        <li>...</li>
+    </ul>
+    
+</body>
+</html>
