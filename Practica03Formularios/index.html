@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica03</title>
+    <style>
+        form {
+            width: 50%;
+            text-align: center;
+        }
+        fieldset {
+            padding: 10px;
+        }
+        body {
+            background-color: #FCF5ED;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="destino.html" method="get" id="mi-formulario">
+        <fieldset>
+            <h2 style="text-align: center; color: #27005D;"><strong>Registro de DEVs</strong></h2>
+            <h2 style="text-align: center; color: #27005D;">Completa los siguientes campos</h2>
+            <label for="cuadro-de-texto">Nombre (Obligatorio)</label>
+            <br>
+            <input type="text" name="nombre" id="cuadro-de-texto"> 
+            <br>
+            <label for="cuadro-de-texto">Apellidos (Obligatorio)</label>
+            <br>
+            <input type="text" name="apellidos" id="cuadro-de-texto02">
+            <br>
+            <label for="cuadro-de-texto">Email (Obligatorio)</label>
+            <br>
+            <input type="text" name="Email" id="cuadro-de-texto03">
+
+            <p>Indica en qué lado de la aplicacion desarrollas</p>
+            <input type="radio" name="lenguaje" id="Front-end" value="Front-end"><label for="Front-end">Front-end</label>
+            <br>
+            <input type="radio" name="lenguaje" id="Back-end" value="Back-end"><label for="Back-end" >Back-end</label>
+            <br>
+            <input type="radio" name="lenguaje" id="Full-Stack" value="Full-Stack"><label for="Full-Stack">Full Stack</label>
+
+            <p>Nivel de experiencia</p>
+            <select name="Selección" id="Seleccion">
+                <option value="Selecciona una de las opciones">Selecciona una de las opciones</option>
+                <option value="Junior">Junior</option>
+                <option value="Senior">Senior</option>
+                <option value="Experto">Experto</option>
+            </select>
+
+            <p>Selecciona las tecnologías que utilizas:</p>
+            <input type="checkbox" name="html" id="ht" value="HTML"><label for="ht">HTML</label>
+            <input type="checkbox" name="css" id="cs" value="CSS"><label for="cs">CSS</label>
+            <input type="checkbox" name="javascript" id="js" value="JavaScript"><label for="js">JavaScript</label>
+            <input type="checkbox" name="php" id="ph" value="PHP"><label for="ph">PHP</label>
+            <input type="checkbox" name="c" id="c#" value="C#"><label for="c#">C#</label>
+            <input type="checkbox" name="python" id="pt" value="Python"><label for="pt">Python</label>
+            <input type="checkbox" name="java" id="jv" value="Java"><label for="jv">Java</label>
+
+            <p>Cuenta algo más acerca de tu experiencia:</p>
+            <textarea name="message" style="width:500px; height:150px;"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+        
+</body>
+</html>
